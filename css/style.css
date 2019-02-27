@@ -24,27 +24,29 @@ h1, h2{
 
 header, nav, section, aside, footer{
     background-color: #ebebeb;
-    margin:5px;
+    margin:5px 5px;
     padding:30px;
     text-align:center;
 }
 
 header, nav{
     width:100%;
+    clear: both;
+    float:left;
 }
 
 section{
     width:495px;
     float:left;
-    padding:10px;
-
+    padding:40px 10px 10px 10px;
 }
 
 aside{
    width:449px;
    float:left;
-   margin-right: 0;
-   height: 206px;
+   margin-right:0;
+   height: 239px;
+   padding:40px 10px 10px 10px;
 }
 
 article{
@@ -69,15 +71,6 @@ footer{
     width:960px;
     bottom:0;
     display:block;
-    /**No estoy seguro que sea la forma correcta pero flotandolo logre que se fuera hacia abajo**/
     float:left;
-} 
-    
-}
-
-.clearfix::after{
-        content:"";
-        display:block;
-        clear:both; 
-        overflow:auto;
+    clear:both;
 }
